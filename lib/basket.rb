@@ -2,6 +2,7 @@ class Basket
   attr_accessor :line_items
 
   def initialize(items_string)
+    #TODO abstract string parsing into clean(er) module
     @line_items = []
     item_lines = items_string.split("\n").reject { |line| line.include?("Input")}
     item_lines.each do |item_line|

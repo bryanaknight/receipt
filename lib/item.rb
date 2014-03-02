@@ -17,11 +17,15 @@ class Item
   private
 
   def base_tax
-    exempt? ? 0 : price * BASE_TAX_RATE
+    #TODO: add rounding
+    tax = exempt? ? 0 : price * BASE_TAX_RATE
+    Rounder.round_tax(tax)
   end
 
   def import_tax
-    imported? ? price * 0.05 : 0
+    #TODO: add rounding
+    tax = imported? ? price * 0.05 : 0
+    Rounder.round_tax(tax)
   end
 
   def exempt?
