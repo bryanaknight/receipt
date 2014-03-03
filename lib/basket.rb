@@ -23,6 +23,10 @@ class Basket
     tax_total + subtotal
   end
 
+  def print_receipt
+    #TODO - implement
+  end
+
   private
 
   def subtotal
