@@ -24,7 +24,7 @@ class Basket
   end
 
   def print_receipt
-    #TODO - implement
+    ReceiptFormatter.format_receipt(self)
   end
 
   private
