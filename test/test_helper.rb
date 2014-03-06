@@ -1,3 +1,5 @@
 require_relative '../lib/basket.rb'
 require_relative '../lib/item.rb'
 require_relative '../lib/line_item.rb'
+require_relative '../lib/exempt_manifest.rb'
+require_relative '../lib/rounder.rb'

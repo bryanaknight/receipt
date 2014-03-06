@@ -20,7 +20,7 @@ class Basket
   end
 
   def total
-    tax_total + subtotal
+    (tax_total + subtotal).round(2)
   end
 
   def print_receipt
